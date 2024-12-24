@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.4.1</version>
+        <relativePath/>
+    </parent>
+    <groupId>io.github.lumijiez</groupId>
+    <artifactId>core</artifactId>
+    <version>1.0.0</version>
+    <name>core</name>
+    <description>Catalyst Backend</description>
+    <url>https://github.com/lumijiez/catalyst</url>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer>
+            <id>lumijiez</id>
+            <name>Daniel</name>
+            <email>danthevip@gmail.com</email>
+            <roles>
+                <role>Developer</role>
+                <role>Lead</role>
+            </roles>
+            <timezone>GMT+2</timezone>
+            <organizationUrl>https://github.com/lumijiez</organizationUrl>
+        </developer>
+    </developers>
+    <scm>
+        <connection>scm:git:git://github.com/lumijiez/catalyst.git</connection>
+        <developerConnection>scm:git:ssh://github.com/lumijiez/catalyst.git</developerConnection>
+        <url>https://github.com/lumijiez/catalyst</url>
+        <tag>HEAD</tag>
+    </scm>
+    <properties>
+        <java.version>23</java.version>
+    </properties>
+    <dependencies>
+
+        <!-- WEB DEPENDENCIES -->
+
+        <!-- Spring Web Starter -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Spring WebFlux -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-webflux</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- DATA -->
+
+        <!-- Flyway Core -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
+        <!-- Flyway Migrations PostgreSQL -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-database-postgresql</artifactId>
+        </dependency>
+
+        <!-- JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- Spring Redis -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring REST Repositories -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-rest</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring GraphQL -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-graphql</artifactId>
+        </dependency>
+
+        <!-- Spring GraphQL -->
+        <dependency>
+            <groupId>org.springframework.graphql</groupId>
+            <artifactId>spring-graphql-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- PostgreSQL -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- Communication -->
+
+        <!-- Spring RabbitMQ AMQP -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-amqp</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring RabbitMQ Streams -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.amqp</groupId>-->
+<!--            <artifactId>spring-rabbit-stream</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring RabbitMQ -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.amqp</groupId>-->
+<!--            <artifactId>spring-rabbit-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- Spring WebSockets -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-websocket</artifactId>
+        </dependency>
+
+        <!-- OTHER -->
+
+        <!-- Spring Batcher -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-batch</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring Batch -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.batch</groupId>-->
+<!--            <artifactId>spring-batch-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- Spring Reactor -->
+<!--        <dependency>-->
+<!--            <groupId>io.projectreactor</groupId>-->
+<!--            <artifactId>reactor-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- Spring Security -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-security</artifactId>-->
+<!--        </dependency>-->
+
+        <!-- Spring Security -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.security</groupId>-->
+<!--            <artifactId>spring-security-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- Spring Validator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!-- DEVTOOLS -->
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Spring DevTools -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- Spring StartInDocker -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-docker-compose</artifactId>-->
+<!--            <scope>runtime</scope>-->
+<!--            <optional>true</optional>-->
+<!--        </dependency>-->
+
+        <!-- Spring Boot Starter Testing -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-test</artifactId>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- Spring Actuator -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--        </dependency>-->
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
